@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, MessageCircle, Star, Navigation, ExternalLink, Clock } from "lucide-react";
 
 const FB_REVIEWS = "https://www.facebook.com/profile.php?id=61580537777667&sk=reviews";
-const FB_PAGE = "https://www.facebook.com/profile.php?id=61580537777667";
 const MESSENGER = "https://m.me/61580537777667";
-const GMAPS_LINK =
-  "https://www.google.com/maps/search/?api=1&query=Stacijas%20iela%209A%2C%20R%C4%93zekne%2C%20Latvia";
-const ADDRESS_QUERY = "Stacijas iela 9A, Rēzekne, Latvia";
+// Exact coordinates for TastyBox Rēzekne, Stacijas iela 9A
+const LAT = 56.519729;
+const LNG = 27.345756;
+const GMAPS_LINK = `https://www.google.com/maps/dir/?api=1&destination=${LAT},${LNG}`;
 
 export function Location() {
   const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string | undefined;
 
   const embedSrc = apiKey
-    ? `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${encodeURIComponent(ADDRESS_QUERY)}&zoom=16`
-    : `https://www.openstreetmap.org/export/embed.html?bbox=27.32%2C56.50%2C27.36%2C56.52&layer=mapnik&marker=56.5125%2C27.3389`;
+    ? `https://www.google.com/maps/embed/v1/view?key=${apiKey}&center=${LAT},${LNG}&zoom=17&maptype=roadmap`
+    : `https://www.openstreetmap.org/export/embed.html?bbox=${LNG - 0.01}%2C${LAT - 0.005}%2C${LNG + 0.01}%2C${LAT + 0.005}&layer=mapnik&marker=${LAT}%2C${LNG}`;
 
   return (
     <section id="atrasanas" className="py-20 md:py-28 relative overflow-hidden">
