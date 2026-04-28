@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, MessageCircle, Star, Navigation, ExternalLink, Clock } from "lucide-react";
 
 const FB_REVIEWS = "https://www.facebook.com/profile.php?id=61580537777667&sk=reviews";
-const FB_PAGE = "https://www.facebook.com/profile.php?id=61580537777667";
 const MESSENGER = "https://m.me/61580537777667";
-const GMAPS_LINK =
-  "https://www.google.com/maps/search/?api=1&query=Stacijas%20iela%209A%2C%20R%C4%93zekne%2C%20Latvia";
-const ADDRESS_QUERY = "Stacijas iela 9A, Rēzekne, Latvia";
+// Exact coordinates for TastyBox Rēzekne, Stacijas iela 9A
+const LAT = 56.519729;
+const LNG = 27.345756;
+const GMAPS_LINK = `https://www.google.com/maps/dir/?api=1&destination=${LAT},${LNG}`;
 
 export function Location() {
   const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY as string | undefined;
 
   const embedSrc = apiKey
-    ? `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${encodeURIComponent(ADDRESS_QUERY)}&zoom=16`
-    : `https://www.openstreetmap.org/export/embed.html?bbox=27.32%2C56.50%2C27.36%2C56.52&layer=mapnik&marker=56.5125%2C27.3389`;
+    ? `https://www.google.com/maps/embed/v1/view?key=${apiKey}&center=${LAT},${LNG}&zoom=17&maptype=roadmap`
+    : `https://www.openstreetmap.org/export/embed.html?bbox=${LNG - 0.01}%2C${LAT - 0.005}%2C${LNG + 0.01}%2C${LAT + 0.005}&layer=mapnik&marker=${LAT}%2C${LNG}`;
 
   return (
     <section id="atrasanas" className="py-20 md:py-28 relative overflow-hidden">
@@ -21,11 +21,11 @@ export function Location() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 text-xs text-primary uppercase tracking-[0.25em] mb-3">
-            <Navigation className="w-3.5 h-3.5" /> Kur mūs atrast?
+            <Navigation className="w-3.5 h-3.5" /> Atrašanās vieta
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-cream">Atrašanās vieta</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-cream">Kur mūs atrast?</h2>
           <p className="mt-4 text-muted-foreground">
-            Mēs gaidām tevi Rēzeknes centrā — ērti, ātri, garšīgi.
+            Atrodamies Stacijas ielā 9A, Rēzeknē — ērti piebraukt un paņemt pasūtījumu līdzņemšanai.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export function Location() {
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="text-xs text-muted-foreground uppercase tracking-wider">Adrese</div>
-                    <div className="text-cream font-semibold">Stacijas iela 9A, Rēzekne</div>
+                    <div className="text-cream font-semibold">Stacijas iela 9A, Rēzekne, LV-4601</div>
                   </div>
                 </div>
 
