@@ -56,7 +56,7 @@ export function Contact() {
                 </div>
               </a>
 
-              <a href="https://www.facebook.com/tastyboxrezekne" target="_blank" rel="noreferrer" className="flex items-start gap-4 group">
+              <a href="https://www.facebook.com/profile.php?id=61580537777667" target="_blank" rel="noreferrer" className="flex items-start gap-4 group">
                 <div className="w-11 h-11 rounded-full bg-primary/15 flex items-center justify-center text-primary flex-shrink-0">
                   <Facebook className="w-5 h-5" />
                 </div>
