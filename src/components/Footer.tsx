@@ -34,12 +34,12 @@ export function Footer() {
             </li>
             <li>
               <a href="tel:+37122438667" className="flex items-center gap-2 text-muted-foreground hover:text-primary">
-                <Phone className="w-4 h-4 text-primary" /> <span>+371 22 438 667</span>
+                <Phone className="w-4 h-4 text-primary" /><span>+371 22 438 667</span>
               </a>
             </li>
             <li>
               <a href="mailto:riel2025@inbox.lv" className="flex items-center gap-2 text-muted-foreground hover:text-primary">
-                <Mail className="w-4 h-4 text-primary" /> <span>riel2025@inbox.lv</span>
+                <Mail className="w-4 h-4 text-primary" /><span>riel2025@inbox.lv</span>
               </a>
             </li>
             <li>
