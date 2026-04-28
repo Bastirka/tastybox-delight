@@ -21,11 +21,11 @@ export function Location() {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 text-xs text-primary uppercase tracking-[0.25em] mb-3">
-            <Navigation className="w-3.5 h-3.5" /> Kur mūs atrast?
+            <Navigation className="w-3.5 h-3.5" /> Atrašanās vieta
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-cream">Atrašanās vieta</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-cream">Kur mūs atrast?</h2>
           <p className="mt-4 text-muted-foreground">
-            Mēs gaidām tevi Rēzeknes centrā — ērti, ātri, garšīgi.
+            Atrodamies Stacijas ielā 9A, Rēzeknē — ērti piebraukt un paņemt pasūtījumu līdzņemšanai.
           </p>
         </div>
 
