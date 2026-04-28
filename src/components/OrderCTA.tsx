@@ -32,11 +32,11 @@ export function OrderCTA() {
               <a href="tel:+37122438667" className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-gradient-primary text-primary-foreground font-bold shadow-glow hover:scale-[1.02] transition-transform">
                 <Phone className="w-5 h-5" /> Zvanīt tagad
               </a>
-              <a href="https://m.me/tastyboxrezekne" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-cream text-background font-bold hover:scale-[1.02] transition-transform">
+              <a href="https://m.me/61580537777667" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-cream text-background font-bold hover:scale-[1.02] transition-transform">
                 <MessageCircle className="w-5 h-5" /> Rakstīt Messenger
               </a>
-              <a href="https://www.facebook.com/tastyboxrezekne" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border-2 border-border text-cream font-bold hover:border-primary/50 transition-colors">
-                <Facebook className="w-5 h-5" /> Facebook lapa
+              <a href="https://www.facebook.com/profile.php?id=61580537777667" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border-2 border-border text-cream font-bold hover:border-primary/50 transition-colors">
+                <Facebook className="w-5 h-5" /> Atvērt Facebook lapu
               </a>
             </div>
           </div>
