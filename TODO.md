@@ -12,4 +12,5 @@
 
 - [x] 3. Rebuild: `rm -rf dist && npx vite build` done (public/index.html copied to dist/client/index.html)
 
-- [ ] 4. Git commit/push for redeploy
+- [x] 4. Git commit/push: public/index.html + vercel.json updated, pushed (Vercel redeploys)
+
