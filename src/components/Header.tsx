@@ -8,6 +8,7 @@ const links = [
   { href: "#dienas", label: "Dienas piedāvājums" },
   { href: "#edienkarte", label: "Ēdienkarte" },
   { href: "#atsauksmes", label: "Atsauksmes" },
+  { href: "#atrasanas", label: "Atrašanās vieta" },
   { href: "#kontakti", label: "Kontakti" },
 ];
 
