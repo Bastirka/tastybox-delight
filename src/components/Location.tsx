@@ -56,7 +56,7 @@ export function Location() {
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <div className="text-xs text-muted-foreground uppercase tracking-wider">Adrese</div>
-                    <div className="text-cream font-semibold">Stacijas iela 9A, Rēzekne</div>
+                    <div className="text-cream font-semibold">Stacijas iela 9A, Rēzekne, LV-4601</div>
                   </div>
                 </div>
 
