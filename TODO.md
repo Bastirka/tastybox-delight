@@ -1,8 +1,15 @@
-# TODO: Fix Vercel Deployment 404
+# TODO: Fix Vercel Deployment 404 - Phase 2 (Static Adaptation)
 
-## Steps:
-- [x] 1. Create vercel.json with SPA rewrites
-- [x] 2. Test build: `npx vite build` succeeds, outputs dist/client/ (TanStack Start structure, Vercel uses dist/client for static SPA)
+## Previous Steps Complete:
+- [x] vercel.json rewrites
+- [x] Deps & build test
+- [x] Git push
 
-- [x] 3. Changes ready: Add/commit vercel.json, push to GitHub, Vercel will auto-redeploy. Test https://tastybox-delight.vercel.app/
+## New Steps:
+- [x] 1. Create public/index.html for static SPA entry (loads TanStack client JS)
 
+- [x] 2. Update vercel.json: add "outputDirectory": "./dist/client"
+
+- [x] 3. Rebuild: `rm -rf dist && npx vite build` done (public/index.html copied to dist/client/index.html)
+
+- [ ] 4. Git commit/push for redeploy
