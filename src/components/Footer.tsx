@@ -1,4 +1,4 @@
-import { Phone, MapPin, Facebook, Mail, Star, Navigation } from "lucide-react";
+import { Phone, MapPin, Facebook, Mail, Star, Navigation, ShoppingBag } from "lucide-react";
 import logo from "@/assets/tastybox-logo.png";
 
 const FB_PAGE = "https://www.facebook.com/profile.php?id=61580537777667";
@@ -51,8 +51,13 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="font-display text-lg font-bold text-cream mb-4">Sekojiet mums</h4>
+          <h4 className="font-display text-lg font-bold text-cream mb-4">Pasūti un seko</h4>
           <ul className="space-y-3 text-sm mb-5">
+            <li>
+              <a href="https://food.bolt.eu/lv-lv/654-rezekne/p/170616-tasty-box/" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-primary">
+                <ShoppingBag className="w-4 h-4 text-primary" /> <span>Pasūtīt Bolt Food</span>
+              </a>
+            </li>
             <li>
               <a href={FB_PAGE} target="_blank" rel="noreferrer" className="flex items-center gap-2 text-muted-foreground hover:text-primary">
                 <Facebook className="w-4 h-4 text-primary" /> <span>Facebook lapa</span>

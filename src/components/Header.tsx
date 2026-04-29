@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Phone, MessageCircle, Menu, X } from "lucide-react";
+import { Phone, MessageCircle, Menu, X, ShoppingBag } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "@/assets/tastybox-logo.png";
 
@@ -47,8 +47,8 @@ export function Header() {
           <a href="tel:+37122438667" className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition-all text-sm font-semibold">
             <Phone className="w-4 h-4" /> Zvanīt
           </a>
-          <a href="https://m.me/61580537777667" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-primary text-primary-foreground hover:shadow-glow transition-all text-sm font-semibold">
-            <MessageCircle className="w-4 h-4" /> Messenger
+          <a href="https://food.bolt.eu/lv-lv/654-rezekne/p/170616-tasty-box/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#34D186] text-background hover:opacity-90 transition-all text-sm font-bold">
+            <ShoppingBag className="w-4 h-4" /> Bolt Food
           </a>
         </div>
 
@@ -75,8 +75,11 @@ export function Header() {
                 <a href="tel:+37122438667" className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full border border-primary/40 text-primary font-semibold">
                   <Phone className="w-4 h-4" /> Zvanīt
                 </a>
+                <a href="https://food.bolt.eu/lv-lv/654-rezekne/p/170616-tasty-box/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-[#34D186] text-background font-bold">
+                  <ShoppingBag className="w-4 h-4" /> Pasūtīt Bolt Food
+                </a>
                 <a href="https://m.me/61580537777667" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-gradient-primary text-primary-foreground font-semibold">
-                  <MessageCircle className="w-4 h-4" /> Pasūtīt Messenger
+                  <MessageCircle className="w-4 h-4" /> Messenger
                 </a>
               </div>
             </div>
