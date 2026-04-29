@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, UtensilsCrossed, MapPin, Flame, Package, Sparkles } from "lucide-react";
+import { Phone, UtensilsCrossed, MapPin, Flame, Package, Sparkles, ShoppingBag } from "lucide-react";
 import heroMeal from "@/assets/hero-meal.jpg";
 
 const badges = [
@@ -30,7 +30,10 @@ export function Hero() {
             Mājīgi gatavoti ēdieni katru darba dienu <span className="text-heart">❤</span>
           </p>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-3">
+          <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3">
+            <a href="https://food.bolt.eu/lv-lv/654-rezekne/p/170616-tasty-box/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#34D186] text-background font-bold shadow-glow hover:scale-[1.02] transition-transform">
+              <ShoppingBag className="w-5 h-5" /> Pasūtīt Bolt Food
+            </a>
             <a href="#edienkarte" className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-gradient-primary text-primary-foreground font-bold shadow-glow hover:scale-[1.02] transition-transform">
               <UtensilsCrossed className="w-5 h-5" /> Skatīt ēdienkarti
             </a>

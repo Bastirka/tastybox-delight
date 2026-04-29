@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, MessageCircle, Facebook, Package, Coffee, UtensilsCrossed, Zap } from "lucide-react";
+import { Phone, MessageCircle, Facebook, Package, Coffee, UtensilsCrossed, Zap, ShoppingBag } from "lucide-react";
 
 const features = [
   { icon: Package, label: "Līdzņemšanai" },
@@ -25,10 +25,13 @@ export function OrderCTA() {
           <div className="relative text-center max-w-2xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-cream">Vēlies pasūtīt?</h2>
             <p className="mt-4 text-muted-foreground text-lg">
-              Zvani vai raksti Messenger — sagatavosim pasūtījumu līdzņemšanai <span className="text-heart">❤</span>
+              Pasūti caur Bolt Food, zvani vai raksti Messenger — sagatavosim pasūtījumu līdzņemšanai <span className="text-heart">❤</span>
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+            <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3 justify-center">
+              <a href="https://food.bolt.eu/lv-lv/654-rezekne/p/170616-tasty-box/" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-[#34D186] text-background font-bold shadow-glow hover:scale-[1.02] transition-transform">
+                <ShoppingBag className="w-5 h-5" /> Pasūtīt Bolt Food
+              </a>
               <a href="tel:+37122438667" className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-gradient-primary text-primary-foreground font-bold shadow-glow hover:scale-[1.02] transition-transform">
                 <Phone className="w-5 h-5" /> Zvanīt tagad
               </a>
